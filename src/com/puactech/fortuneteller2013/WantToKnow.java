@@ -85,7 +85,7 @@ public class WantToKnow extends FragmentActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
@@ -98,6 +98,8 @@ public class WantToKnow extends FragmentActivity {
                     return getString(R.string.title_section2).toUpperCase(l);
                 case 2:
                     return getString(R.string.title_section3).toUpperCase(l);
+                case 3:
+                    return getString(R.string.title_section4).toUpperCase(l);
             }
             return null;
         }
@@ -122,7 +124,24 @@ public class WantToKnow extends FragmentActivity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_want_to_know_dummy, container, false);
             TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
-            dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            //dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            int sectionNumber = getArguments().getInt(ARG_SECTION_NUMBER);
+            String sectionText = "";
+            switch(sectionNumber){
+                    case 1:
+                            sectionText = getString(R.string.section_text1);
+                            break;
+                    case 2:
+                            sectionText = getString(R.string.section_text2);
+                            break;
+                    case 3:
+                            sectionText = getString(R.string.section_text3);
+                            break;
+                    case 4:
+                            sectionText = getString(R.string.section_text4);
+                            break;
+            }
+            dummyTextView.setText(sectionText);
             return rootView;
         }
     }
