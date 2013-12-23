@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.*;
 
 public class WantToKnow extends FragmentActivity {
 
@@ -124,22 +125,27 @@ public class WantToKnow extends FragmentActivity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_want_to_know_dummy, container, false);
             TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
-            //dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            ImageView sectionImage = (ImageView) rootView.findViewById(R.id.section_image);
+			//dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
             int sectionNumber = getArguments().getInt(ARG_SECTION_NUMBER);
             String sectionText = "";
             switch(sectionNumber){
                     case 1:
                             sectionText = getString(R.string.section_text1);
+							sectionImage.setImageResource(R.drawable.pickle);
                             break;
                     case 2:
                             sectionText = getString(R.string.section_text2);
-                            break;
+   							sectionImage.setImageResource(R.drawable.shay);
+   							break;
                     case 3:
                             sectionText = getString(R.string.section_text3);
-                            break;
+   							sectionImage.setImageResource(R.drawable.michelle);
+							break;
                     case 4:
                             sectionText = getString(R.string.section_text4);
-                            break;
+   							sectionImage.setImageResource(R.drawable.shayndmichelle);
+							break;
             }
             dummyTextView.setText(sectionText);
             return rootView;
