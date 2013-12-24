@@ -2,15 +2,19 @@
 <resources>
 
     <string name="app_name">fortuneTeller2013</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Shay rubbing michelles shoulders</string>
-    <string name="title_section3">Section 3</string>
-    <string name="title_section4">Section 4</string>
-    <string name="section_text1">just pickle</string>
-    <string name="section_text2">just shay</string>
-    <string name="section_text3">just michelle</string>
-    <string name="section_text4">pickle and michelle</string>
-    <string name="image_description">just you wait</string>
+    <string name="action_info">Info</string>
+    <string name="title_section1">A Pickle?</string>
+    <string name="title_section2">What</string>
+    <string name="title_section3">is</string>
+    <string name="title_section4">going</string>
+	<string name="title_section5">on?!?!</string>
+	<string name="title_section6">Oh, I see!</string>
+    <string name="section_text1"></string>
+    <string name="section_text2"></string>
+    <string name="section_text3"></string>
+    <string name="section_text4"></string>
+	<string name="section_text5"></string>
+	<string name="section_text6">Cravings end July 2014</string>
+    <string name="image_description">...fortune...</string>
 
 </resources>

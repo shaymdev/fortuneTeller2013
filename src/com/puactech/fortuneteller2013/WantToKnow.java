@@ -85,8 +85,8 @@ public class WantToKnow extends FragmentActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 4;
+            // Show 6 total pages.
+            return 6;
         }
 
         @Override
@@ -101,6 +101,10 @@ public class WantToKnow extends FragmentActivity {
                     return getString(R.string.title_section3).toUpperCase(l);
                 case 3:
                     return getString(R.string.title_section4).toUpperCase(l);
+				case 4:
+                    return getString(R.string.title_section5).toUpperCase(l);
+				case 5:
+                    return getString(R.string.title_section6).toUpperCase(l);
             }
             return null;
         }
@@ -146,6 +150,14 @@ public class WantToKnow extends FragmentActivity {
                             sectionText = getString(R.string.section_text4);
    							sectionImage.setImageResource(R.drawable.shayndmichelle);
 							break;
+					case 5:
+   							sectionText = getString(R.string.section_text5);
+  							sectionImage.setImageResource(R.drawable.michellewantspickle);
+   							break;
+					case 6:
+   							sectionText = getString(R.string.section_text6);
+   							sectionImage.setImageResource(R.drawable.pregnant);
+   							break;
             }
             dummyTextView.setText(sectionText);
             return rootView;
